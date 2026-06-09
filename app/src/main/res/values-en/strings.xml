@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Sisa Uang</string>
+
+    <!-- Navigation Labels -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_accounts">Accounts</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_archive">Archive</string>
+    <string name="action_unarchive">Unarchive</string>
+    <string name="action_undo">UNDO</string>
+    <string name="action_add">Add</string>
+    <string name="action_search">Search…</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_reset">Reset</string>
+
+    <!-- Security PIN / Biometrics -->
+    <string name="security_enter_pin">Enter Your PIN</string>
+    <string name="security_create_pin">Create New PIN</string>
+    <string name="security_confirm_pin">Confirm Your PIN</string>
+    <string name="security_pin_mismatch">PINs do not match. Please try again.</string>
+    <string name="security_pin_wrong">Incorrect PIN. %d attempts remaining.</string>
+    <string name="security_biometric_prompt_title">Sisa Uang Secure Lock</string>
+    <string name="security_biometric_prompt_subtitle">Touch finger sensor or use face lock</string>
+    <string name="security_biometric_prompt_description">Verify identity to unlock Sisa Uang app database.</string>
+
+    <!-- Onboarding / Walkthrough -->
+    <string name="onboarding_welcome_title">Welcome to Sisa Uang</string>
+    <string name="onboarding_welcome_desc">A native, secure, offline-first personal finance application.</string>
+    <string name="onboarding_seed_data_title">Start with Demo Data?</string>
+    <string name="onboarding_seed_data_desc">We can populate several sample accounts &amp; transactions so you can explore the dashboard instantly.</string>
+    <string name="onboarding_action_seed">Seed Sample Data</string>
+    <string name="onboarding_action_blank">Start Fresh</string>
+    <string name="onboarding_btn_next">Continue</string>
+    <string name="onboarding_btn_start">Start Now</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_net_worth">Net Worth</string>
+    <string name="dashboard_surplus">Current Month Surplus</string>
+    <string name="dashboard_defisit">Current Month Deficit</string>
+    <string name="dashboard_warning_defisit">Warning: Expense exceeds income this month!</string>
+    <string name="dashboard_composition">Asset Allocation</string>
+    <string name="dashboard_recent_transactions">Recent Transactions</string>
+    <string name="dashboard_no_transactions">No transactions recorded this month.</string>
+    <string name="dashboard_view_all">View All</string>
+    <string name="dashboard_income_vs_expense">Cash Flow Trend</string>
+
+    <!-- Account Screen / Details -->
+    <string name="account_label_title">Account Management</string>
+    <string name="account_label_add">Add Account</string>
+    <string name="account_label_edit">Edit Account</string>
+    <string name="account_label_name">Account Name</string>
+    <string name="account_label_type">Account Type</string>
+    <string name="account_label_initial">Initial Balance</string>
+    <string name="account_label_color">Brand Color</string>
+    <string name="account_label_icon">Symbol Icon</string>
+    <string name="account_is_archived">This account is archived (hidden from transaction drop-downs)</string>
+    <string name="account_deleted_message">Account \"%s\" has been deleted.</string>
+    <string name="account_archived_message">Account \"%s\" archived.</string>
+    <string name="account_unarchived_message">Account \"%s\" unarchived.</string>
+
+    <!-- Transaction Entry Screen -->
+    <string name="tx_label_add">Record Transaction</string>
+    <string name="tx_label_edit">Edit Transaction</string>
+    <string name="tx_label_amount">Amount</string>
+    <string name="tx_label_type">Transaction Type</string>
+    <string name="tx_label_category">Category</string>
+    <string name="tx_label_account">Select Account</string>
+    <string name="tx_label_to_account">Destination Account</string>
+    <string name="tx_label_fee">Admin Fee (Optional)</string>
+    <string name="tx_label_note">Memo / Note</string>
+    <string name="tx_label_date">Date &amp; Time</string>
+    <string name="tx_label_photo">Photo Attachment</string>
+    <string name="tx_label_tags">Tags (comma separated)</string>
+    <string name="tx_select_category_fav">Favorite Categories</string>
+    <string name="tx_deleted_message">Transaction has been deleted.</string>
+    
+    <!-- Transaction Search and Filter -->
+    <string name="filter_title">Filter Transactions</string>
+    <string name="filter_keyword">Keyword</string>
+    <string name="filter_by_account">Filter Account</string>
+    <string name="filter_by_category">Filter Category</string>
+    <string name="filter_by_type">Filter Type</string>
+    <string name="filter_by_amount_range">Amount Range</string>
+    <string name="filter_empty_state">No transactions matching filter criteria.</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Sisa Uang Settings</string>
+    <string name="settings_section_general">General Preferences</string>
+    <string name="settings_theme">Dynamic Theme</string>
+    <string name="settings_theme_system">Follow System</string>
+    <string name="settings_theme_light">Light Theme</string>
+    <string name="settings_theme_dark">Dark Theme</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_section_security">App Security</string>
+    <string name="settings_security_pin">PIN-Code Protection</string>
+    <string name="settings_security_biometrics">Biometric Lock (Fingerprint)</string>
+    <string name="settings_section_data">Data Operations</string>
+    <string name="settings_data_seed_title">Populate Demonstration Data</string>
+    <string name="settings_data_seed_desc">Substitute current ledger with testing transactions profile.</string>
+    <string name="settings_data_clear_title">Wipe Ledgers Cleanup</string>
+    <string name="settings_data_clear_desc">Erase all records including accounts, category list, and logs.</string>
+    <string name="settings_data_cleared_msg">All transaction ledgers cleared successfully.</string>
+    <string name="settings_data_seeded_msg">Demo transactions pack seeded successfully.</string>
+
+    <!-- Account Types -->
+    <string name="actype_bank">Bank / Checking Account</string>
+    <string name="actype_ewallet">Digital Wallet / E-wallet</string>
+    <string name="actype_broker">Investment Portofolio / Broker</string>
+    <string name="actype_deposito">Fixed Time Deposito</string>
+    <string name="actype_tunai">Cash / Pocket Change</string>
+    <string name="actype_credit">Credit Card / Debt Account</string>
+    <string name="actype_custom">Custom Label</string>
+
+    <!-- Transaction Types -->
+    <string name="txtype_income">Income</string>
+    <string name="txtype_expense">Expense</string>
+    <string name="txtype_transfer">Account Transfer</string>
+    <string name="txtype_reconcile">Balance Reconcile</string>
+</resources>

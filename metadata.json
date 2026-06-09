@@ -1,0 +1,6 @@
+{
+  "name": "DompetKu",
+  "description": "Aplikasi Native Manajemen Uang Pribadi Offline-First Profesional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

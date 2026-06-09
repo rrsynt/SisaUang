@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Sisa Uang</string>
+
+    <!-- Navigation Labels -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_transactions">Transaksi</string>
+    <string name="nav_accounts">Dompet</string>
+    <string name="nav_settings">Pengaturan</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Simpan</string>
+    <string name="action_cancel">Batal</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Hapus</string>
+    <string name="action_archive">Arsipkan</string>
+    <string name="action_unarchive">Aktifkan Kembali</string>
+    <string name="action_undo">BATALKAN</string>
+    <string name="action_add">Tambah</string>
+    <string name="action_search">Cari…</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_reset">Reset</string>
+
+    <!-- Security PIN / Biometrics -->
+    <string name="security_enter_pin">Masukkan PIN Anda</string>
+    <string name="security_create_pin">Buat PIN Baru</string>
+    <string name="security_confirm_pin">Konfirmasi PIN Anda</string>
+    <string name="security_pin_mismatch">PIN tidak cocok. Silakan coba lagi.</string>
+    <string name="security_pin_wrong">PIN salah. Tersisa %d percobaan.</string>
+    <string name="security_biometric_prompt_title">Kunci Keamanan Sisa Uang</string>
+    <string name="security_biometric_prompt_subtitle">Tempel sidik jari atau gunakan biometrik</string>
+    <string name="security_biometric_prompt_description">Verifikasi identitas Anda untuk membuka aplikasi Sisa Uang.</string>
+
+    <!-- Onboarding / Walkthrough -->
+    <string name="onboarding_welcome_title">Selamat Datang di Sisa Uang</string>
+    <string name="onboarding_welcome_desc">Aplikasi manajemen keuangan pribadi native, aman, dan offline-first.</string>
+    <string name="onboarding_seed_data_title">Mulai dengan Data Contoh?</string>
+    <string name="onboarding_seed_data_desc">Kami bisa mengisi beberapa dompet &amp; transaksi contoh sehingga Anda bisa langsung mencoba fitur-fiturnya.</string>
+    <string name="onboarding_action_seed">Isi Data Contoh</string>
+    <string name="onboarding_action_blank">Mulai dari Nol</string>
+    <string name="onboarding_btn_next">Lanjut</string>
+    <string name="onboarding_btn_start">Mulai Sekarang</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_net_worth">Kekayaan Bersih</string>
+    <string name="dashboard_surplus">Surplus Bulan Ini</string>
+    <string name="dashboard_defisit">Defisit Bulan Ini</string>
+    <string name="dashboard_warning_defisit">Peringatan: Pengeluaran melebihi pemasukan bulan ini!</string>
+    <string name="dashboard_composition">Komposisi Aset</string>
+    <string name="dashboard_recent_transactions">Transaksi Terbaru</string>
+    <string name="dashboard_no_transactions">Belum ada transaksi bulan ini.</string>
+    <string name="dashboard_view_all">Lihat Semua</string>
+    <string name="dashboard_income_vs_expense">Tren Aliran Kas</string>
+
+    <!-- Account Screen / Details -->
+    <string name="account_label_title">Manajemen Dompet</string>
+    <string name="account_label_add">Tambah Dompet</string>
+    <string name="account_label_edit">Edit Dompet</string>
+    <string name="account_label_name">Nama Dompet</string>
+    <string name="account_label_type">Jenis Dompet</string>
+    <string name="account_label_initial">Saldo Awal</string>
+    <string name="account_label_color">Warna Identitas</string>
+    <string name="account_label_icon">Simbol Ikon</string>
+    <string name="account_is_archived">Dompet ini diarsipkan (disembunyikan dari pilihan transaksi)</string>
+    <string name="account_deleted_message">Dompet \"%s\" telah dihapus.</string>
+    <string name="account_archived_message">Dompet \"%s\" diarsipkan.</string>
+    <string name="account_unarchived_message">Dompet \"%s\" diaktifkan kembali.</string>
+
+    <!-- Transaction Entry Screen -->
+    <string name="tx_label_add">Catat Transaksi</string>
+    <string name="tx_label_edit">Edit Transaksi</string>
+    <string name="tx_label_amount">Nominal</string>
+    <string name="tx_label_type">Tipe Transaksi</string>
+    <string name="tx_label_category">Kategori</string>
+    <string name="tx_label_account">Pilih Dompet</string>
+    <string name="tx_label_to_account">Dompet Tujuan</string>
+    <string name="tx_label_fee">Biaya Admin (Opsional)</string>
+    <string name="tx_label_note">Catatan Tambahan</string>
+    <string name="tx_label_date">Tanggal &amp; Waktu</string>
+    <string name="tx_label_photo">Lampiran Foto</string>
+    <string name="tx_label_tags">Tag Bebas (pisahkan koma)</string>
+    <string name="tx_select_category_fav">Kategori Favorit</string>
+    <string name="tx_deleted_message">Transaksi telah dihapus.</string>
+    
+    <!-- Transaction Search and Filter -->
+    <string name="filter_title">Filter Transaksi</string>
+    <string name="filter_keyword">Kata Kunci</string>
+    <string name="filter_by_account">Filter Dompet</string>
+    <string name="filter_by_category">Filter Kategori</string>
+    <string name="filter_by_type">Filter Tipe</string>
+    <string name="filter_by_amount_range">Rentang Nominal</string>
+    <string name="filter_empty_state">Transaksi tidak ditemukan.</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Pengaturan Sisa Uang</string>
+    <string name="settings_section_general">Pilihan Umum</string>
+    <string name="settings_theme">Tema Aplikasi</string>
+    <string name="settings_theme_system">Ikuti Sistem</string>
+    <string name="settings_theme_light">Terang</string>
+    <string name="settings_theme_dark">Gelap</string>
+    <string name="settings_language">Bahasa</string>
+    <string name="settings_section_security">Keamanan Data</string>
+    <string name="settings_security_pin">Proteksi PIN Aplikasi</string>
+    <string name="settings_security_biometrics">Kunci Biometrik (Sidik Jari)</string>
+    <string name="settings_section_data">Manajemen Data</string>
+    <string name="settings_data_seed_title">Isi Data Demonstrasi</string>
+    <string name="settings_data_seed_desc">Ganti data saat ini dengan transaksi model pengujian lengkap.</string>
+    <string name="settings_data_clear_title">Kosongkan Semua Data Finansial</string>
+    <string name="settings_data_clear_desc">Hapus seluruh isi dompet, transaksi, dan kategori bawaan.</string>
+    <string name="settings_data_cleared_msg">Semua data berhasil dibersihkan.</string>
+    <string name="settings_data_seeded_msg">Data demo berhasil ditambahkan.</string>
+
+    <!-- Account Types -->
+    <string name="actype_bank">Bank / Rekening</string>
+    <string name="actype_ewallet">Dompet Digital / E-wallet</string>
+    <string name="actype_broker">Investasi / Broker</string>
+    <string name="actype_deposito">Deposito Berjangka</string>
+    <string name="actype_tunai">Tunai / Cash</string>
+    <string name="actype_credit">Kartu Kredit / Utang</string>
+    <string name="actype_custom">Kustom Mandiri</string>
+
+    <!-- Transaction Types -->
+    <string name="txtype_income">Pemasukan</string>
+    <string name="txtype_expense">Pengeluaran</string>
+    <string name="txtype_transfer">Transfer Antar-Dompet</string>
+    <string name="txtype_reconcile">Penyesuaian Saldo</string>
+</resources>
