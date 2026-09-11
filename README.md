@@ -44,28 +44,48 @@ simpan ke docs/screenshots/, lalu hapus tanda komentar ini.
 
 ## Architecture
 
-Clean Architecture, three layers:
+```mermaid
+flowchart TB
+    subgraph UI["Presentation — Jetpack Compose + Material 3"]
+        SCR["Screens<br/>Dashboard · Wallets · Portfolio · Reports"]
+        VM["MainViewModel"]
+    end
 
-```
-┌─────────────────────────┐
-│     Presentation        │  Jetpack Compose + Material 3
-│  (UI / ViewModel)       │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│       Domain            │  Models, repository interfaces,
-│  (Models / Logic)       │  FinanceCalculator, parsers
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│        Data             │  Room/SQLCipher, SharedPreferences,
-│  (Room / Sync / Worker) │  WorkManager, Sheets/Drive API
-└─────────────────────────┘
+    subgraph DOM["Domain — no Android, no Room"]
+        MOD["Models"]
+        RI["Repository interfaces"]
+        CALC["FinanceCalculator<br/>BigDecimal arithmetic"]
+        PARSE["Parsers<br/>bank notification · OCR · CSV"]
+    end
+
+    subgraph DATA["Data"]
+        ROOM[("Room + SQLCipher<br/>AES-256 at rest")]
+        PREFS["SharedPreferences"]
+        WM["WorkManager<br/>recurring · sync"]
+        GS["Google Sheets API v4<br/>+ Drive API v3"]
+    end
+
+    KS["Android Keystore<br/>non-exportable 256-bit key"]
+    NOTIF["NotificationListenerService<br/>on-device only"]
+
+    SCR --> VM --> RI
+    VM --> CALC
+    RI -.->|"implemented by"| ROOM
+    RI -.->|"implemented by"| GS
+    PARSE --> RI
+    NOTIF --> PARSE
+    WM --> ROOM
+    WM --> GS
+    VM --> PREFS
+
+    KS -->|"HMAC-SHA256 salt, keystore_key"| ROOM
 ```
 
-The domain layer defines repository interfaces and knows nothing about Room or Google. The data layer implements those interfaces. The presentation layer is a single `MainViewModel` connecting the Compose screens, backed by a hand-rolled `AppContainer` for dependency wiring.
+The dependency rule points one way: **Domain knows nothing about Room or Google.** The data layer implements the interfaces the domain declares, which is what makes the storage layer swappable and testable without a device.
+
+The database passphrase is derived at launch from a hardware-backed key, so it is never stored and there is no hardcoded fallback. If SQLCipher cannot be initialised the app refuses to start rather than silently writing plaintext.
+
+The presentation layer is a single `MainViewModel` connecting the Compose screens, backed by a hand-rolled `AppContainer` for dependency wiring.
 
 ---
 
